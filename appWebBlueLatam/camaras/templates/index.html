@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+{% if user.is_authenticated %}
+<h1>Bienvenido&nbsp{{user.username}} aksdmlkasmd</h1>
+
+
+<a href="{% url 'logout' %}">CerrarSesion</a>
+
+{% else %}
+
+<p>Ingresa tu user y clave</p>
+<a href="{% url 'signup' %}">Registro</a>
+
+
+<a  href="{% url 'login' %}">Entrar</a>
+
+{% endif %}
+
+<h1>Video</h1>
+
+<img src="{% url 'livecam_feed' %}">
+
+
+{% endblock %}
+
+
+
