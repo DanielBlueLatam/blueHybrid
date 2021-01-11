@@ -2,7 +2,7 @@ import cv2
 
 class LiveWebCam():
 	def __init__(self):
-		self.url = cv2.VideoCapture('rtsp://admin:IP80IV@201.218.147.13/1')
+		self.url = cv2.VideoCapture('rtsp://admin:IPBOIV@192.168.20.107/h264_stream')
 
 	def __del__(self):
 		cv2.destroyAllWindows()
