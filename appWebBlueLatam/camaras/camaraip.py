@@ -4,7 +4,6 @@ from camaras.models import (
 	Camara
 )
 import cv2
-import requests
 import json
 import datetime
 

@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.model import User
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -18,4 +18,4 @@ class KPI(models.Model):
 class Resultado(models.Model):
 	resultado_json = models.JSONField()
 	fecha = models.DateTimeField()
-	camara_fk = models.ForeignKey(Camara)
+	camara_fk = models.ForeignKey(Camara, on_delete=models.CASCADE)
